@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Beat Permutator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>    
+</head>
+<body>
+
+<header>
+    <h1>Beat Permutator</h1>
+    <h2>The Linear Beat Generator</h2>
+    <a class="twitter-share-button"
+      href="https://twitter.com/share"
+      data-size="large"
+      data-text="I just got beat permutations based upon a number of voices and steps"
+      data-url="http://heissmusik.com/beat-permutator"
+      data-hashtags="music,technology,drumming"
+      data-via="heissmusik"
+      data-related="twitterapi,twitter">
+    Tweet
+    </a>
+
+    <a class="github-source-link" href="https://github.com/heissmusik/beat-permutator" target="_blank">
+        <img src="Octocat.png" class="github-source-icon"/>
+    </a>    
+</header>
+
+<div class="flex-grid-thirds">
+
+    <div class="col">
+
+        <h3>Voices</h3>
+        <div class="cell-wrap">
+            <div><input type="checkbox" name="voices" value="F" checked="true"></div>
+            <div class="musiqwik">=C=</div>
+            <div class="checkbox-desc">Bass Drum<br/>Right Foot (F)</div>
+        </div>
+
+        <div class="cell-wrap">
+            <div><input type="checkbox" name="voices" value="L" checked="true"></div>
+            <div class="musiqwik">=I=</div>
+            <div class="checkbox-desc">Snare Drum<br/>Left Hand (L)</div>
+        </div>
+        
+        <div class="cell-wrap">
+            <div><input type="checkbox" name="voices" value="R"></div>
+            <div class="musiqwik">=L=</div>
+            <div class="checkbox-desc">Ride Cymbal<br/>Right Hand (R)</div>
+        </div>
+
+        <div class="cell-wrap">
+            <div><input type="checkbox" name="voices" value="X"></div>
+            <div class="musiqwik">=D=</div>
+            <div class="checkbox-desc">Hi-Hat<br/>Left Foot (X)</div>
+        </div>
+
+        <div class="cell-wrap">
+            <div><input type="checkbox" name="voices" value="O"></div>
+            <div class="musiqwik">=9=</div>
+            <div class="checkbox-desc">Rest</div>
+        </div>
+
+    </div>
+
+    <div class="col">
+
+        <h3>Steps</h3>
+        <div class="radio">
+            <label>
+                <input type="radio" name="steps" value="2" checked="true"> 2
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="steps" value="3"> 3
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="steps" value="4"> 4
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="steps" value="5"> 5
+            </label>
+        </div>
+        <br><br>
+        <a id="submit" class="button"><span>Permutate</span></a>
+    
+    </div>
+
+    <div class="col">
+        <h3>Permutations</h3>
+        <div id="fragmentScroll">
+            <ul class="fragments-list list-unstyled"></ul>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/template" id="stepView">
+    <span><%= letter %></span>
+</script>
+
+<script type="text/template" id="fragmentTpl">
+    <li>
+        <span class="musiqwik">
+           
+        <%= '=' + fragment + '=' %>
+      
+        </span>
+        <%= num %> of <%= count %>
+    </li>
+</script>
+
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/underscore/underscore-min.js"></script>
+
+<script src="js/beat-permutator.js"></script>
+</body>
+</html>

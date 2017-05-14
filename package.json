@@ -1,0 +1,25 @@
+{
+  "name": "beat-permutator",
+  "version": "0.1.0",
+  "description": "App to generate all rhythmic pattern fragments (permutations) that exist given a number of voices and steps.",
+  "homepage": "",
+  "author": "Frank Heiss <heissmusik@gmail.com> (http://heissmusik.com)",
+  "license": "UNLICENSED",  
+  "main": "",
+  "devDependencies": {
+    "abbrev": "^1.0.7",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-express": "^1.4.1",
+    "grunt-open": "^0.2.3",
+    "grunt-parallel": "^0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-shell": "~0.6.1",
+    "grunt-browser-sync": "~0.5.7",
+    "grunt-contrib-compass": "~1.1.1"
+  }
+}

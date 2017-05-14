@@ -1,0 +1,109 @@
+@import '_variables';
+@import '_reset';
+@import '_button';
+@import '_fonts';
+@import '_flex-grid';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 5%;
+    font-size: 16px;
+    background-color: $royal-dark-blue;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1, 
+header h2 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.flex-grid { 
+    margin: 0 0 20px 0;
+}
+
+.col {
+    background: #eee;
+    color: 000000;
+
+    padding: 15px 30px;
+    border: 1px solid black;  
+}
+
+.monospace {
+    font-family: $font-mono;
+    font-size: 1.4rem;
+}
+
+#fragmentScroll {
+    height: 260px;
+    overflow: auto;
+}
+
+ul.fragments-list {
+    list-style-type: none;
+    padding: 10px 20px;
+
+    li {
+        padding: 10px 0 20px;
+        font-size: 24px;
+
+        span {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.cell-wrap {
+    display: table;
+    padding: 10px;
+
+    & > div {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 5px;
+    }
+}
+
+.checkbox-desc {
+    font-size: 16px;
+}
+
+.github-source-icon {
+    max-height: 28px;
+}

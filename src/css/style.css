@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/_button.scss */
+.button {
+  display: inline-block;
+  margin: 10px auto;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: 0px 3px gray, 0px 4px #767676, 0px 5px #6c6c6c, 0px 6px #626262, 0px 7px #585858, 0px 8px #4e4e4e;
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+}
+
+/* line 15, ../sass/_button.scss */
+.button span {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #27408b;
+  text-transform: uppercase;
+  background-color: #ffff00;
+  -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+  -webkit-border-radius: 10px;
+  -webkit-transition: -webkit-transform .1s ease-in-out;
+}
+
+/* line 28, ../sass/_button.scss */
+.button span:hover {
+  color: #fffffc;
+  background-color: #ff9505;
+  text-shadow: 0px -1px #97A63A;
+  cursor: pointer;
+}
+
+/* line 35, ../sass/_button.scss */
+.button span:after {
+  color: #AEBF3B;
+  text-shadow: 0px 1px #fff, 0px -1px #97A63A;
+  font-size: 26px;
+}
+
+/* line 41, ../sass/_button.scss */
+.button:active {
+  -webkit-box-shadow: 0px 3px gray, 0px 4px #767676, 0px 5px #6c6c6c, 0px 6px #626262, 0px 7px #585858, 0px 8px #4e4e4e, 0px 10px 2px 0px rgba(128, 128, 128, 0.6);
+  /* shadow */
+}
+
+/* line 52, ../sass/_button.scss */
+.button:active span {
+  -webkit-transform: translate(0, 5px);
+  /* depth of button press */
+}
+
+@font-face {
+  font-family: 'musiqwikregular';
+  src: url("./fonts/musiqwik-webfont.eot");
+  src: url("./fonts/musiqwik-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/musiqwik-webfont.woff") format("woff"), url("./fonts/musiqwik-webfont.ttf") format("truetype"), url("./fonts/musiqwik-webfont.svg#musiqwikregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../sass/_fonts.scss */
+.musiqwik {
+  font-family: musiqwikregular;
+  font-size: 48px;
+}
+
+/* line 1, ../sass/_flex-grid.scss */
+.flex-grid {
+  display: flex;
+}
+
+/* line 4, ../sass/_flex-grid.scss */
+.flex-grid .col {
+  flex: 1;
+}
+
+/* line 7, ../sass/_flex-grid.scss */
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 11, ../sass/_flex-grid.scss */
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 667px) {
+  /* line 16, ../sass/_flex-grid.scss */
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+  }
+  /* line 19, ../sass/_flex-grid.scss */
+  .flex-grid .col,
+  .flex-grid-thirds .col {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+/* line 7, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/style.scss */
+html {
+  height: 100%;
+}
+
+/* line 15, ../sass/style.scss */
+body {
+  padding: 5%;
+  font-size: 16px;
+  background-color: #27408b;
+}
+
+/* line 21, ../sass/style.scss */
+header {
+  margin-bottom: 20px;
+}
+
+/* line 25, ../sass/style.scss */
+header h1,
+header h2 {
+  color: #ffffff;
+}
+
+/* line 30, ../sass/style.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 34, ../sass/style.scss */
+h2 {
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+/* line 39, ../sass/style.scss */
+h3 {
+  font-size: 24px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+
+/* line 47, ../sass/style.scss */
+h4 {
+  font-size: 12px;
+}
+
+/* line 51, ../sass/style.scss */
+label {
+  font-size: 12px;
+}
+
+/* line 55, ../sass/style.scss */
+.flex-grid {
+  margin: 0 0 20px 0;
+}
+
+/* line 59, ../sass/style.scss */
+.col {
+  background: #eee;
+  color: 000000;
+  padding: 15px 30px;
+  border: 1px solid black;
+}
+
+/* line 67, ../sass/style.scss */
+.monospace {
+  font-family: "PT Mono", monospace;
+  font-size: 1.4rem;
+}
+
+/* line 72, ../sass/style.scss */
+#fragmentScroll {
+  height: 260px;
+  overflow: auto;
+}
+
+/* line 77, ../sass/style.scss */
+ul.fragments-list {
+  list-style-type: none;
+  padding: 10px 20px;
+}
+/* line 81, ../sass/style.scss */
+ul.fragments-list li {
+  padding: 10px 0 20px;
+  font-size: 24px;
+}
+/* line 85, ../sass/style.scss */
+ul.fragments-list li span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 92, ../sass/style.scss */
+.cell-wrap {
+  display: table;
+  padding: 10px;
+}
+/* line 96, ../sass/style.scss */
+.cell-wrap > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+/* line 103, ../sass/style.scss */
+.checkbox-desc {
+  font-size: 16px;
+}
+
+/* line 107, ../sass/style.scss */
+.github-source-icon {
+  max-height: 28px;
+}

@@ -1,0 +1,6 @@
+.idea/
+.sass-cache/
+node_modules/
+src/vendor
+srv/
+rsync.sh

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'musiqwikregular';
+    src: url('./fonts/musiqwik-webfont.eot');
+    src: url('./fonts/musiqwik-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/musiqwik-webfont.woff') format('woff'),
+    url('./fonts/musiqwik-webfont.ttf') format('truetype'),
+    url('./fonts/musiqwik-webfont.svg#musiqwikregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.musiqwik {
+    font-family: musiqwikregular;
+    font-size: 48px;
+}
